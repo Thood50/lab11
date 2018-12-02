@@ -16,6 +16,8 @@ app.get('/', getHome);
 
 app.post('/searches', createSearch);
 
+app.listen(PORT, () => console.log(`Listening on ${POST}`));
+
 //////////////////// MODELS //////////////////////////
 
 function Book(info) {
