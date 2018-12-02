@@ -16,6 +16,18 @@ app.get('/', getHome);
 
 app.post('/searches', createSearch);
 
+//////////////////// MODELS //////////////////////////
+
+function Book(info) {
+    const placeholderImage = 'https://i.imgur.com/J5LVHEL.jpg';
+    
+    this.title = info.volumeInfo.title || 'No title available';
+    this.isbn = info.volumeInfo.industryIdentifiers[0].identifier || info.volumeInfo.industryIdentifiers[1].identifier || 'No ISBN available';
+    this.image_url = info.volumeInfo.imageLinks.smallThumbnail|| placeholderImage;
+    this.author = info.volumeInfo.authors || 'No author available';
+    this.description = info.volumeInfo.description || 'No description available';
+}
+
 //////////////////// HANDLERS /////////////////////////
 
 function getHome (request, response) {
