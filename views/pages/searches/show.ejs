@@ -1,1 +1,15 @@
-
+<!DOCTYPE html>
+<html>
+  
+  <body>
+    
+    <main>
+      <ul class="book-list">
+          <% searchResults.forEach(book => { %>
+            <li class="books"><%= book.title %></li>
+          <% }) %>
+      </ul>
+    </main>
+  </body>
+  
+</html>
