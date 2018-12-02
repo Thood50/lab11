@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/Thood50/lab11/issues"
   },
-  "homepage": "https://github.com/Thood50/lab11#readme"
+  "homepage": "https://github.com/Thood50/lab11#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "pg": "^7.7.1",
+    "superagent": "^4.0.0"
+  }
 }
