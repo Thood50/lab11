@@ -16,7 +16,7 @@ app.get('/', getHome);
 
 app.post('/searches', createSearch);
 
-app.listen(PORT, () => console.log(`Listening on ${POST}`));
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 //////////////////// MODELS //////////////////////////
 
