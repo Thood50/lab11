@@ -13,3 +13,9 @@ app.use(express.urlencoded({extended: true}));
 
 //route to home page
 app.get('/', getHome);
+
+//////////////////// HANDLERS /////////////////////////
+
+function getHome (request, response) {
+    return response.render('pages/index.ejs');
+}
