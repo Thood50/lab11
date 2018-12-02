@@ -1,6 +1,6 @@
 'use strict'
 
-//general setup/package required
+/////////////////// SETUP //////////////////////////
 const express = require('express');
 const superagent = require('superagent');
 require('dotenv').config();
@@ -10,9 +10,11 @@ app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 app.use(express.urlencoded({extended: true}));
 
+//////////////////// ROUTES //////////////////////////
 
-//route to home page
 app.get('/', getHome);
+
+app.post('/searches', createSearch);
 
 //////////////////// HANDLERS /////////////////////////
 
