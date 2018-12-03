@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../partials/head.ejs') %>
+    </head>
+
+    <body>
+
+        <form action="/searches" method ="post">
+            <fieldset>
+
+                <label> Search
+                    <input type="text" name="searchTerm"></input>    
+                </label>
+                <button type="submit">Go!</button>
+
+                <label for="title">Search by Title 
+                    <input type="radio" name="searchRadio" value="title" required></input>
+                </label>
+
+                <label for="author">Search by Author
+                    <input type="radio" name="searchRadio" value="author" required></input>
+                </label>
+
+            </fieldset>
+        </form>
+        <footer>
+            <%- include('../partials/footer') %>
+        </footer>
+    </body>
+
+</html>
